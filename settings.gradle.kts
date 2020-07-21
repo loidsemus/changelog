@@ -1,2 +1,2 @@
-rootProject.name = "kotlin-paper-plugin"
+rootProject.name = "changelog"
 

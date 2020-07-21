@@ -1,4 +1,4 @@
-package me.loidsemus.plugin.config
+package me.loidsemus.changelog.config
 
 import de.exlll.configlib.annotation.Comment
 import de.exlll.configlib.configs.yaml.YamlConfiguration

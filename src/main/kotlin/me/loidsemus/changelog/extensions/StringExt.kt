@@ -1,4 +1,4 @@
-package me.loidsemus.plugin.extensions
+package me.loidsemus.changelog.extensions
 
 import org.apache.commons.lang.StringUtils
 import org.bukkit.ChatColor

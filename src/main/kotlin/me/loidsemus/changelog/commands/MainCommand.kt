@@ -1,4 +1,4 @@
-package me.loidsemus.plugin.commands
+package me.loidsemus.changelog.commands
 
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor

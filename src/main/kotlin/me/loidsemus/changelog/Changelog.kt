@@ -1,16 +1,16 @@
-package me.loidsemus.plugin
+package me.loidsemus.changelog
 
 import co.aikar.idb.DB
 import co.aikar.idb.DatabaseOptions
 import co.aikar.idb.PooledDatabaseOptions
-import me.loidsemus.plugin.commands.MainCommand
-import me.loidsemus.plugin.config.MainConfig
-import me.loidsemus.plugin.config.lang.LanguageConfig
+import me.loidsemus.changelog.commands.MainCommand
+import me.loidsemus.changelog.config.MainConfig
+import me.loidsemus.changelog.config.lang.LanguageConfig
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
 
 // TODO: Rename class
-class Template : JavaPlugin() {
+class Changelog : JavaPlugin() {
 
     val mainConfig = MainConfig(dataFolder)
     val messages = LanguageConfig(dataFolder)
@@ -28,7 +28,7 @@ class Template : JavaPlugin() {
         DB.setGlobalDatabase(database)
 
         // TODO: Replace command name
-        getCommand("template")?.setExecutor(MainCommand())
+        getCommand("changelog")?.setExecutor(MainCommand())
     }
 
     override fun onDisable() {

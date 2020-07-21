@@ -1,11 +1,11 @@
 # TODO: Edit file
-name: kotlin-paper-plugin
-main: me.loidsemus.plugin.Template
+name: Changelog
+main: me.loidsemus.changelog.Changelog
 version: @version@
 author: "loidsemus"
 api-version: "1.13"
-description: Kotlin paper plugin template
+description: Keep changelogs
 
 commands:
-  main:
-    description: Main command
+  changelog:
+    description: Main changelog command

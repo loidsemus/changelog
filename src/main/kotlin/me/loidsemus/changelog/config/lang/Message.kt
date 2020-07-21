@@ -1,7 +1,7 @@
-package me.loidsemus.plugin.config.lang
+package me.loidsemus.changelog.config.lang
 
-import me.loidsemus.plugin.extensions.formatColorCodes
-import me.loidsemus.plugin.extensions.replaceFast
+import me.loidsemus.changelog.extensions.formatColorCodes
+import me.loidsemus.changelog.extensions.replaceFast
 
 class Message(val text: String) {
 

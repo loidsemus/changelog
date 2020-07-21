@@ -1,4 +1,4 @@
-package me.loidsemus.plugin.config.lang
+package me.loidsemus.changelog.config.lang
 
 import de.exlll.configlib.configs.yaml.YamlConfiguration
 import java.io.File
