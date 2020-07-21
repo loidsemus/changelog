@@ -9,7 +9,6 @@ import me.loidsemus.changelog.config.lang.LanguageConfig
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
 
-// TODO: Rename class
 class Changelog : JavaPlugin() {
 
     val mainConfig = MainConfig(dataFolder)
@@ -27,7 +26,6 @@ class Changelog : JavaPlugin() {
         val database = PooledDatabaseOptions.builder().options(dbOptions).createHikariDatabase()
         DB.setGlobalDatabase(database)
 
-        // TODO: Replace command name
         getCommand("changelog")?.setExecutor(MainCommand())
     }
 
