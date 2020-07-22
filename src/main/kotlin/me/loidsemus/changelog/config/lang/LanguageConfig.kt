@@ -8,7 +8,7 @@ import java.io.File
 @Comment(
     "Most if not all messages in the plugin are configurable here.",
     "To use color codes, use an ampersand (&) followed by the color code, for example &6 or &e",
-    "Like usual in YAML, to use some characters like apostrophes you'll first have to escape them with a backslash (\\)",
+    "Like usual in YAML, to use apostrophes you'll have to escape them by writing them two times.",
     "The placeholders available for a certain value are listed above it, those without listed placeholders don't have any."
 )
 class LanguageConfig(dir: File) : YamlConfiguration(
