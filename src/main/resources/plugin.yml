@@ -1,5 +1,5 @@
 name: Changelog
-main: me.loidsemus.changelog.Changelog
+main: me.loidsemus.changelog.ChangelogPlugin
 version: @version@
 author: "loidsemus"
 api-version: "1.13"
