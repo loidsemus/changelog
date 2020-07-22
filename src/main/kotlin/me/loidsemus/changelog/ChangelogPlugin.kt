@@ -1,7 +1,8 @@
 package me.loidsemus.changelog
 
 import co.aikar.idb.DB
-import me.loidsemus.changelog.commands.MainCommand
+import me.loidsemus.changelog.commands.RootCommand
+import me.loidsemus.changelog.commands.subcommands.NewCommand
 import me.loidsemus.changelog.config.MainConfig
 import me.loidsemus.changelog.config.lang.LanguageConfig
 import me.loidsemus.changelog.data.DataSource
@@ -22,7 +23,9 @@ class ChangelogPlugin : JavaPlugin() {
 
         dataSource = SQLiteDataSource(dataFolder)
 
-        getCommand("changelog")?.setExecutor(MainCommand())
+        val rootCommand = RootCommand(this, "changelog")
+        rootCommand.addSubcommand(NewCommand())
+        getCommand("changelog")?.setExecutor(rootCommand)
     }
 
     override fun onDisable() {
